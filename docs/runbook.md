@@ -1,7 +1,7 @@
 # Runbook
 
 ## Local Bring-Up (Simple)
-1. `cd "/Users/aadit/Downloads/Verity"`
+1. `cd "<PROJECT_ROOT>"`
 2. `make setup`
 3. `make api` (terminal A)
 4. `make worker` (terminal B)
@@ -22,7 +22,7 @@ make learnset-sync
 ```
 
 ## Learnset Folder
-- Path: `/Users/aadit/Downloads/Verity/learnset`
+- Path: `<PROJECT_ROOT>/learnset`
 - Drop files and run `make learnset-sync`
 - Supported now:
   - Text-like files (full text)

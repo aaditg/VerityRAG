@@ -9,3 +9,5 @@ alembic.ini
 *.log
 terraform.tfstate*
 .terraform/
+
+tmp/

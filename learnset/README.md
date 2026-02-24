@@ -9,7 +9,7 @@ Supported now:
 
 Then run:
 ```bash
-cd "/Users/aadit/Downloads/Verity"
+cd "<PROJECT_ROOT>"
 make learnset-sync
 ```
 

@@ -17,7 +17,7 @@ Requirements:
 
 One-time setup:
 ```bash
-cd "/Users/aadit/Downloads/Verity"
+cd "<PROJECT_ROOT>"
 make setup
 ```
 
@@ -66,7 +66,7 @@ make learnset-sync
 Then ask again with `make ask` or `make chat`.
 
 ## Learnset Folder
-- Put files into `/Users/aadit/Downloads/Verity/learnset`.
+- Put files into `<PROJECT_ROOT>/learnset`.
 - Current support:
   - Text-like files (`.txt`, `.md`, `.csv`, `.json`, `.py`, etc.)
   - PDFs (`.pdf`) via `pypdf`
