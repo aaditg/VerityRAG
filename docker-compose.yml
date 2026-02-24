@@ -1,0 +1,32 @@
+version: '3.9'
+services:
+  postgres:
+    image: ankane/pgvector:latest
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: rag
+    ports:
+      - '5432:5432'
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - '6379:6379'
+
+  localstack:
+    image: localstack/localstack:3.8
+    environment:
+      - SERVICES=s3,sqs,secretsmanager
+      - DEBUG=1
+      - AWS_DEFAULT_REGION=us-east-1
+    ports:
+      - '4566:4566'
+    volumes:
+      - localstack_data:/var/lib/localstack
+
+volumes:
+  pgdata:
+  localstack_data:

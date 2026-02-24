@@ -1,0 +1,255 @@
+===== Q1 =====
+
+=== Answer ===
+Based on available evidence:
+- Multi-AZ deployments
+- RTO of 2 hours
+- failover between us-east-1 and us-west-2
+- Frankfurt data center
+- site-to-site VPN and Direct Connect
+- Snowflake long-term analytics storage
+
+Mode: grounded  Confidence: 0.8730954388870682  Cache hit: False
+
+=== Citations ===
+1. TechNova_Cloud_Infrastructure.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Cloud_Infrastructure.pdf
+2. TechNova_Security_Compliance.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Security_Compliance.pdf
+3. TechNova_Application_Data_Architecture.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Application_Data_Architecture.pdf
+4. Q1 Enterprise Notes (Pipeline) -> https://example.local/q1
+
+=== Suggested Followups ===
+- Show source excerpts
+- Give a shorter summary
+
+===== Q2 =====
+
+=== Answer ===
+Based on available evidence:
+- identity-aware proxies
+- zero-trust access enforcement
+- private subnets
+- VPN required for production access
+- RBAC
+- MFA
+
+Mode: grounded  Confidence: 0.8787582217861396  Cache hit: False
+
+=== Citations ===
+1. TechNova_Cloud_Infrastructure.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Cloud_Infrastructure.pdf
+2. TechNova_Security_Compliance.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Security_Compliance.pdf
+3. TechNova_Application_Data_Architecture.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Application_Data_Architecture.pdf
+4. Q1 Enterprise Notes (Risks) -> https://example.local/q1
+
+=== Suggested Followups ===
+- Show source excerpts
+- Give a shorter summary
+
+===== Q3 =====
+
+=== Answer ===
+Based on available evidence:
+- postmortem required
+
+Mode: grounded  Confidence: 0.8753962024743209  Cache hit: False
+
+=== Citations ===
+1. TechNova_Security_Compliance.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Security_Compliance.pdf
+2. TechNova_Cloud_Infrastructure.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Cloud_Infrastructure.pdf
+3. TechNova_Application_Data_Architecture.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Application_Data_Architecture.pdf
+4. Q1 Enterprise Notes (Risks) -> https://example.local/q1
+
+=== Suggested Followups ===
+- Show source excerpts
+- Give a shorter summary
+
+===== Q4 =====
+
+=== Answer ===
+A user request from frontend to database follows this path: Frontend (React) -> CDN -> Load Balancer -> Private Subnet -> PostgreSQL Cluster.
+
+Mode: grounded  Confidence: 0.8678613434058855  Cache hit: False
+
+=== Citations ===
+1. TechNova_Application_Data_Architecture.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Application_Data_Architecture.pdf
+2. TechNova_Cloud_Infrastructure.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Cloud_Infrastructure.pdf
+
+=== Suggested Followups ===
+- Show sources
+- Provide a deeper technical explanation
+
+===== Q5 =====
+
+=== Answer ===
+Based on available evidence:
+- Load balancer
+- Prometheus
+- Grafana
+- OpenTelemetry
+- PagerDuty
+
+Mode: grounded  Confidence: 0.8654388447063892  Cache hit: False
+
+=== Citations ===
+1. TechNova_Application_Data_Architecture.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Application_Data_Architecture.pdf
+2. TechNova_Cloud_Infrastructure.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Cloud_Infrastructure.pdf
+3. TechNova_Security_Compliance.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Security_Compliance.pdf
+4. Q1 Enterprise Notes (Risks) -> https://example.local/q1
+
+=== Suggested Followups ===
+- Show source excerpts
+- Give a shorter summary
+
+===== Q6 =====
+
+=== Answer ===
+Based on available evidence:
+- RBAC
+- MFA
+- AWS Secrets Manager with automatic rotation
+
+Mode: grounded  Confidence: 0.7742889260401304  Cache hit: False
+
+=== Citations ===
+1. TechNova_Security_Compliance.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Security_Compliance.pdf
+2. TechNova_Application_Data_Architecture.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Application_Data_Architecture.pdf
+3. TechNova_Cloud_Infrastructure.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Cloud_Infrastructure.pdf
+4. Q1 Enterprise Notes (Pipeline) -> https://example.local/q1
+
+=== Suggested Followups ===
+- Show source excerpts
+- Give a shorter summary
+
+===== Q7 =====
+
+=== Answer ===
+Based on available evidence:
+- Multi-AZ deployments
+- RTO of 2 hours
+- failover between us-east-1 and us-west-2
+- Frankfurt data center
+- site-to-site VPN and Direct Connect
+- Snowflake long-term analytics storage
+
+Mode: grounded  Confidence: 0.8707981964509579  Cache hit: False
+
+=== Citations ===
+1. TechNova_Cloud_Infrastructure.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Cloud_Infrastructure.pdf
+2. TechNova_Application_Data_Architecture.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Application_Data_Architecture.pdf
+3. TechNova_Security_Compliance.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Security_Compliance.pdf
+4. Q1 Enterprise Notes (Risks) -> https://example.local/q1
+
+=== Suggested Followups ===
+- Show source excerpts
+- Give a shorter summary
+
+===== Q8 =====
+
+=== Answer ===
+Based on available evidence:
+- Load balancer
+- Prometheus
+- Grafana
+- OpenTelemetry
+- PagerDuty
+
+Mode: grounded  Confidence: 0.8657105684800788  Cache hit: False
+
+=== Citations ===
+1. TechNova_Application_Data_Architecture.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Application_Data_Architecture.pdf
+2. TechNova_Security_Compliance.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Security_Compliance.pdf
+3. TechNova_Cloud_Infrastructure.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Cloud_Infrastructure.pdf
+4. Q1 Enterprise Notes (Risks) -> https://example.local/q1
+
+=== Suggested Followups ===
+- Show source excerpts
+- Give a shorter summary
+
+===== Q9 =====
+
+=== Answer ===
+Based on available evidence:
+- identity-aware proxies
+- zero-trust access enforcement
+- private subnets
+- VPN required for production access
+- RBAC
+- MFA
+
+Mode: grounded  Confidence: 0.8026561093916843  Cache hit: False
+
+=== Citations ===
+1. TechNova_Security_Compliance.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Security_Compliance.pdf
+2. TechNova_Cloud_Infrastructure.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Cloud_Infrastructure.pdf
+3. TechNova_Application_Data_Architecture.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Application_Data_Architecture.pdf
+4. Q1 Enterprise Notes (Pipeline) -> https://example.local/q1
+
+=== Suggested Followups ===
+- Show source excerpts
+- Give a shorter summary
+
+===== Q10 =====
+
+=== Answer ===
+Based on available evidence:
+- Multi-AZ deployments
+- RTO of 2 hours
+- failover between us-east-1 and us-west-2
+- Frankfurt data center
+- site-to-site VPN and Direct Connect
+- Snowflake long-term analytics storage
+
+Mode: grounded  Confidence: 0.8736101131073927  Cache hit: False
+
+=== Citations ===
+1. TechNova_Cloud_Infrastructure.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Cloud_Infrastructure.pdf
+2. TechNova_Application_Data_Architecture.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Application_Data_Architecture.pdf
+3. TechNova_Security_Compliance.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Security_Compliance.pdf
+4. Q1 Enterprise Notes (Pipeline) -> https://example.local/q1
+
+=== Suggested Followups ===
+- Show source excerpts
+- Give a shorter summary
+
+===== Q11 =====
+
+=== Answer ===
+Based on available evidence:
+- Multi-AZ deployments
+- Redis caching
+- observability tooling
+
+Mode: grounded  Confidence: 0.7327353359184533  Cache hit: False
+
+=== Citations ===
+1. TechNova_Application_Data_Architecture.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Application_Data_Architecture.pdf
+2. TechNova_Cloud_Infrastructure.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Cloud_Infrastructure.pdf
+3. Q1 Enterprise Notes (Risks) -> https://example.local/q1
+4. Q1 Enterprise Notes (Pipeline) -> https://example.local/q1
+
+=== Suggested Followups ===
+- Show source excerpts
+- Give a shorter summary
+
+===== Q12 =====
+
+=== Answer ===
+Based on available evidence:
+- identity-aware proxies
+- zero-trust access enforcement
+- private subnets
+- VPN required for production access
+- RBAC
+- MFA
+
+Mode: grounded  Confidence: 0.8673765071365579  Cache hit: False
+
+=== Citations ===
+1. TechNova_Security_Compliance.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Security_Compliance.pdf
+2. TechNova_Cloud_Infrastructure.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Cloud_Infrastructure.pdf
+3. TechNova_Application_Data_Architecture.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Application_Data_Architecture.pdf
+4. Q1 Enterprise Notes (Pipeline) -> https://example.local/q1
+
+=== Suggested Followups ===
+- Show source excerpts
+- Give a shorter summary
+

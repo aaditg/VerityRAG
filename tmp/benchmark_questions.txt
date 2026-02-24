@@ -1,0 +1,12 @@
+1|If the primary AWS region us-east-1 becomes unavailable, what mechanisms allow TechNova to maintain availability and meet its RTO?
+2|How does TechNova enforce zero-trust principles across both network access and production system access?
+3|If a P1 security incident impacts EU customer data, what actions must TechNova take?
+4|Describe the full path of a user request from frontend to database.
+5|Which systems support observability and how do they complement each other?
+6|What systems are responsible for protecting secrets and ensuring secure authentication?
+7|If on-premise Chicago data center goes offline, what redundancy mechanisms exist?
+8|Which components would likely be involved in diagnosing a latency spike in production?
+9|How does TechNova separate production workloads from public exposure?
+10|What technologies support both disaster recovery and long-term data retention?
+11|What architectural decisions reduce API cost and operational overhead?
+12|If an engineer needs temporary production access, what layered controls must they pass?

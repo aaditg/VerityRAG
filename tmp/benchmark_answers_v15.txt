@@ -1,0 +1,210 @@
+===== Q1 =====
+
+=== Answer ===
+Answer:
+- Multi-AZ deployments
+- cross-region s3 backup
+- cross-region database replicas
+
+Mode: fact  Confidence: 0.9  Cache hit: False
+
+=== Citations ===
+1. TechNova_Cloud_Infrastructure.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Cloud_Infrastructure.pdf
+
+=== Suggested Followups ===
+- Show source excerpts
+
+
+===== Q2 =====
+
+=== Answer ===
+Answer:
+- identity-aware proxy
+- private subnets
+- VPN required for production access
+
+Mode: fact  Confidence: 0.8514285714285714  Cache hit: True
+
+=== Citations ===
+1. TechNova_Cloud_Infrastructure.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Cloud_Infrastructure.pdf
+2. TechNova_Security_Compliance.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Security_Compliance.pdf
+
+=== Suggested Followups ===
+- Show source excerpts
+
+
+===== Q3 =====
+
+=== Answer ===
+Answer:
+- P1
+- postmortem required
+- 72 hours
+
+Mode: fact  Confidence: 0.86  Cache hit: False
+
+=== Citations ===
+1. TechNova_Security_Compliance.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Security_Compliance.pdf
+
+=== Suggested Followups ===
+- Show source excerpts
+
+
+===== Q4 =====
+
+=== Answer ===
+Answer:
+- CDN
+- WAF
+- private subnets
+
+Mode: fact  Confidence: 0.8557142857142858  Cache hit: False
+
+=== Citations ===
+1. TechNova_Application_Data_Architecture.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Application_Data_Architecture.pdf
+2. TechNova_Cloud_Infrastructure.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Cloud_Infrastructure.pdf
+
+=== Suggested Followups ===
+- Show source excerpts
+
+
+===== Q5 =====
+
+=== Answer ===
+Answer:
+- Prometheus
+- Grafana
+- ELK
+
+Mode: fact  Confidence: 0.8960000000000001  Cache hit: False
+
+=== Citations ===
+1. TechNova_Application_Data_Architecture.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Application_Data_Architecture.pdf
+
+=== Suggested Followups ===
+- Show source excerpts
+
+
+===== Q6 =====
+
+=== Answer ===
+Answer:
+- AWS Secrets Manager with automatic rotation
+- OAuth 2.0
+- Okta
+
+Mode: fact  Confidence: 0.8783333333333333  Cache hit: False
+
+=== Citations ===
+1. TechNova_Security_Compliance.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Security_Compliance.pdf
+2. TechNova_Application_Data_Architecture.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Application_Data_Architecture.pdf
+
+=== Suggested Followups ===
+- Show source excerpts
+
+
+===== Q7 =====
+
+=== Answer ===
+Answer:
+- Multi-AZ deployments
+- cross-region s3 backup
+- cross-region database replicas
+
+Mode: fact  Confidence: 0.9  Cache hit: False
+
+=== Citations ===
+1. TechNova_Cloud_Infrastructure.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Cloud_Infrastructure.pdf
+
+=== Suggested Followups ===
+- Show source excerpts
+
+
+===== Q8 =====
+
+=== Answer ===
+Answer:
+- Prometheus
+- Grafana
+- ELK
+
+Mode: fact  Confidence: 0.8960000000000001  Cache hit: False
+
+=== Citations ===
+1. TechNova_Application_Data_Architecture.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Application_Data_Architecture.pdf
+
+=== Suggested Followups ===
+- Show source excerpts
+
+
+===== Q9 =====
+
+=== Answer ===
+Answer:
+- identity-aware proxy
+- private subnets
+- VPN required for production access
+
+Mode: fact  Confidence: 0.8514285714285714  Cache hit: False
+
+=== Citations ===
+1. TechNova_Cloud_Infrastructure.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Cloud_Infrastructure.pdf
+2. TechNova_Security_Compliance.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Security_Compliance.pdf
+
+=== Suggested Followups ===
+- Show source excerpts
+
+
+===== Q10 =====
+
+=== Answer ===
+Answer:
+- Multi-AZ deployments
+- cross-region s3 backup
+- cross-region database replicas
+
+Mode: fact  Confidence: 0.892  Cache hit: False
+
+=== Citations ===
+1. TechNova_Cloud_Infrastructure.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Cloud_Infrastructure.pdf
+2. TechNova_Application_Data_Architecture.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Application_Data_Architecture.pdf
+
+=== Suggested Followups ===
+- Show source excerpts
+
+
+===== Q11 =====
+
+=== Answer ===
+Answer:
+- Redis
+- CDN
+- Multi-AZ deployments
+
+Mode: fact  Confidence: 0.8725  Cache hit: False
+
+=== Citations ===
+1. TechNova_Application_Data_Architecture.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Application_Data_Architecture.pdf
+2. TechNova_Cloud_Infrastructure.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Cloud_Infrastructure.pdf
+
+=== Suggested Followups ===
+- Show source excerpts
+
+
+===== Q12 =====
+
+=== Answer ===
+Answer:
+- identity-aware proxy
+- private subnets
+- VPN required for production access
+
+Mode: fact  Confidence: 0.8514285714285714  Cache hit: False
+
+=== Citations ===
+1. TechNova_Cloud_Infrastructure.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Cloud_Infrastructure.pdf
+2. TechNova_Security_Compliance.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Security_Compliance.pdf
+
+=== Suggested Followups ===
+- Show source excerpts
+

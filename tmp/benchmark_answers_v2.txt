@@ -1,0 +1,176 @@
+===== Q1 =====
+
+=== Answer ===
+[sales] The primary cloud provider is AWS, with services deployed across us-east-1 and us-west-2
+
+Mode: grounded  Confidence: 0.5614214753018902  Cache hit: False
+
+=== Citations ===
+1. TechNova_Cloud_Infrastructure.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Cloud_Infrastructure.pdf
+2. TechNova_Application_Data_Architecture.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Application_Data_Architecture.pdf
+3. TechNova_Security_Compliance.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Security_Compliance.pdf
+
+=== Suggested Followups ===
+- Would you like a more detailed summary?
+
+===== Q2 =====
+
+=== Answer ===
+[sales] Zero-trust networking principles are enforced via identity-aware proxies.
+
+Mode: grounded  Confidence: 0.5255636238456519  Cache hit: False
+
+=== Citations ===
+1. TechNova_Cloud_Infrastructure.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Cloud_Infrastructure.pdf
+2. TechNova_Application_Data_Architecture.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Application_Data_Architecture.pdf
+3. TechNova_Security_Compliance.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Security_Compliance.pdf
+
+=== Suggested Followups ===
+- Would you like a more detailed summary?
+
+===== Q3 =====
+
+=== Answer ===
+[sales] Security incidents must be reported within 72 hours if customer data is impacted.
+
+Mode: grounded  Confidence: 0.5424101850560142  Cache hit: False
+
+=== Citations ===
+1. TechNova_Security_Compliance.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Security_Compliance.pdf
+2. Q1 Enterprise Notes (Risks) -> https://example.local/q1
+3. TechNova_Cloud_Infrastructure.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Cloud_Infrastructure.pdf
+4. TechNova_Application_Data_Architecture.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Application_Data_Architecture.pdf
+
+=== Suggested Followups ===
+- Would you like a more detailed summary?
+
+===== Q4 =====
+
+=== Answer ===
+[sales] Database replication is configured using multi-AZ and cross-region replicas.
+
+Mode: grounded  Confidence: 0.5258343505236615  Cache hit: False
+
+=== Citations ===
+1. TechNova_Cloud_Infrastructure.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Cloud_Infrastructure.pdf
+2. TechNova_Application_Data_Architecture.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Application_Data_Architecture.pdf
+
+=== Suggested Followups ===
+- Would you like a more detailed summary?
+
+===== Q5 =====
+
+=== Answer ===
+[sales] Multi-factor authentication is mandatory for all systems.
+
+Mode: grounded  Confidence: 0.5841152639255561  Cache hit: False
+
+=== Citations ===
+1. TechNova_Security_Compliance.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Security_Compliance.pdf
+2. TechNova_Application_Data_Architecture.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Application_Data_Architecture.pdf
+3. TechNova_Cloud_Infrastructure.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Cloud_Infrastructure.pdf
+
+=== Suggested Followups ===
+- Would you like a more detailed summary?
+
+===== Q6 =====
+
+=== Answer ===
+[sales] Multi-factor authentication is mandatory for all systems.
+
+Mode: grounded  Confidence: 0.5685913684826099  Cache hit: False
+
+=== Citations ===
+1. TechNova_Security_Compliance.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Security_Compliance.pdf
+2. TechNova_Application_Data_Architecture.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Application_Data_Architecture.pdf
+3. TechNova_Cloud_Infrastructure.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Cloud_Infrastructure.pdf
+
+=== Suggested Followups ===
+- Would you like a more detailed summary?
+
+===== Q7 =====
+
+=== Answer ===
+[sales] On-premise servers are located in Chicago and Frankfurt for compliance and redundancy.
+
+Mode: grounded  Confidence: 0.5662741790450176  Cache hit: False
+
+=== Citations ===
+1. TechNova_Cloud_Infrastructure.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Cloud_Infrastructure.pdf
+2. TechNova_Security_Compliance.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Security_Compliance.pdf
+3. TechNova_Application_Data_Architecture.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Application_Data_Architecture.pdf
+
+=== Suggested Followups ===
+- Would you like a more detailed summary?
+
+===== Q8 =====
+
+=== Answer ===
+[sales] All production services run inside private subnets behind load balancers.
+
+Mode: grounded  Confidence: 0.5227860162726276  Cache hit: False
+
+=== Citations ===
+1. TechNova_Cloud_Infrastructure.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Cloud_Infrastructure.pdf
+2. TechNova_Security_Compliance.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Security_Compliance.pdf
+
+=== Suggested Followups ===
+- Would you like a more detailed summary?
+
+===== Q9 =====
+
+=== Answer ===
+[sales] Production access requires VPN and role-based access control (RBAC).
+
+Mode: grounded  Confidence: 0.5114151822831418  Cache hit: False
+
+=== Citations ===
+1. TechNova_Security_Compliance.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Security_Compliance.pdf
+2. TechNova_Cloud_Infrastructure.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Cloud_Infrastructure.pdf
+3. TechNova_Application_Data_Architecture.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Application_Data_Architecture.pdf
+
+=== Suggested Followups ===
+- Would you like a more detailed summary?
+
+===== Q10 =====
+
+=== Answer ===
+[sales] Disaster Recovery
+
+Mode: grounded  Confidence: 0.5235705191459936  Cache hit: False
+
+=== Citations ===
+1. TechNova_Cloud_Infrastructure.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Cloud_Infrastructure.pdf
+2. TechNova_Application_Data_Architecture.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Application_Data_Architecture.pdf
+3. TechNova_Security_Compliance.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Security_Compliance.pdf
+
+=== Suggested Followups ===
+- Would you like a more detailed summary?
+
+===== Q11 =====
+
+=== Answer ===
+[sales] - Application & Data Architecture
+
+Mode: grounded  Confidence: 0.5001091775205904  Cache hit: False
+
+=== Citations ===
+1. TechNova_Application_Data_Architecture.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Application_Data_Architecture.pdf
+
+=== Suggested Followups ===
+- Would you like a more detailed summary?
+
+===== Q12 =====
+
+=== Answer ===
+[sales] Production access requires VPN and role-based access control (RBAC).
+
+Mode: grounded  Confidence: 0.5871979765773128  Cache hit: False
+
+=== Citations ===
+1. TechNova_Security_Compliance.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Security_Compliance.pdf
+2. TechNova_Cloud_Infrastructure.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Cloud_Infrastructure.pdf
+
+=== Suggested Followups ===
+- Would you like a more detailed summary?
+

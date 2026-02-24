@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Verity Local UI</title>
+  <style>
+    :root {
+      --bg: #101112;
+      --panel: #16181a;
+      --panel-2: #1d2024;
+      --text: #f3f4f6;
+      --muted: #a7afb8;
+      --line: #2b3036;
+      --accent-red: #ef4444;
+      --accent-green: #22c55e;
+      --accent-soft: #2e3339;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: radial-gradient(1200px 700px at 20% -20%, #22272d 0%, var(--bg) 45%);
+      color: var(--text);
+      font-family: "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      min-height: 100vh;
+    }
+    .wrap {
+      max-width: 1100px;
+      margin: 24px auto 40px;
+      padding: 0 16px;
+    }
+    .title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: 22px;
+      margin: 0;
+      letter-spacing: 0.2px;
+    }
+    .pill {
+      border: 1px solid var(--line);
+      padding: 6px 10px;
+      border-radius: 999px;
+      color: var(--muted);
+      font-size: 12px;
+      background: #0f1113;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 14px;
+    }
+    @media (max-width: 900px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+    .card {
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, var(--panel) 0%, var(--panel-2) 100%);
+      border-radius: 14px;
+      padding: 14px;
+    }
+    .card h2 {
+      margin: 0 0 10px;
+      font-size: 14px;
+      color: #d5d9de;
+      letter-spacing: 0.2px;
+      text-transform: uppercase;
+    }
+    label {
+      display: block;
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+    select, textarea, input[type="text"] {
+      width: 100%;
+      border: 1px solid var(--line);
+      background: #0f1113;
+      color: var(--text);
+      border-radius: 10px;
+      padding: 10px 11px;
+      font-size: 14px;
+      outline: none;
+    }
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+    .row { margin-bottom: 12px; }
+    .row:last-child { margin-bottom: 0; }
+    .slider-wrap {
+      display: grid;
+      grid-template-columns: 1fr 40px;
+      gap: 8px;
+      align-items: center;
+    }
+    input[type="range"] { width: 100%; accent-color: #d1d5db; }
+    .meter {
+      font-size: 12px;
+      color: #d1d5db;
+      text-align: right;
+    }
+    .btns {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    button {
+      border: 1px solid var(--line);
+      background: #101214;
+      color: var(--text);
+      border-radius: 10px;
+      padding: 9px 11px;
+      cursor: pointer;
+      font-size: 13px;
+    }
+    button.primary {
+      background: #152118;
+      border-color: #1d3a26;
+      color: #ddffe7;
+    }
+    button.warn {
+      background: #2a1416;
+      border-color: #4a2024;
+      color: #ffdfe2;
+    }
+    .muted { color: var(--muted); font-size: 12px; }
+    .status {
+      margin-top: 8px;
+      font-size: 12px;
+      min-height: 16px;
+    }
+    .status.ok { color: var(--accent-green); }
+    .status.err { color: var(--accent-red); }
+    .answer {
+      white-space: pre-wrap;
+      line-height: 1.45;
+      font-size: 14px;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: #0f1113;
+      min-height: 120px;
+    }
+    .meta {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 8px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+    ul {
+      margin: 8px 0 0;
+      padding-left: 18px;
+    }
+    li { margin: 3px 0; }
+    .sources a { color: #d9dee5; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="title">
+      <h1>Verity Local UI</h1>
+      <span class="pill">Gray/Black/White + Red/Green</span>
+    </div>
+
+    <div class="grid">
+      <aside class="card">
+        <h2>Controls</h2>
+        <div class="row">
+          <label for="persona">Persona</label>
+          <select id="persona">
+            <option value="sales">sales</option>
+            <option value="exec">exec</option>
+            <option value="engineering">engineering</option>
+          </select>
+        </div>
+        <div class="row">
+          <label for="technicalness">Technicalness</label>
+          <div class="slider-wrap">
+            <input id="technicalness" type="range" min="0" max="100" value="45">
+            <div class="meter" id="technicalnessValue">45</div>
+          </div>
+        </div>
+        <div class="row">
+          <label for="tone">Tone</label>
+          <select id="tone">
+            <option value="friendly">friendly</option>
+            <option value="direct" selected>direct</option>
+            <option value="critical">critical</option>
+          </select>
+        </div>
+        <div class="row">
+          <label for="conciseness">Conciseness</label>
+          <div class="slider-wrap">
+            <input id="conciseness" type="range" min="0" max="100" value="70">
+            <div class="meter" id="concisenessValue">70</div>
+          </div>
+        </div>
+        <div class="row">
+          <label for="query">Prompt</label>
+          <textarea id="query" placeholder="Ask a question..."></textarea>
+        </div>
+        <div class="row">
+          <label><input id="useGeneralKnowledge" type="checkbox" checked> Use general knowledge</label>
+        </div>
+        <div class="row">
+          <label><input id="useContext" type="checkbox" checked> Use conversation context</label>
+        </div>
+        <div class="row">
+          <label for="sessionId">Session</label>
+          <input id="sessionId" type="text" readonly>
+        </div>
+        <div class="row">
+          <label><input id="fastMode" type="checkbox"> Fast mode (lower latency, less synthesis)</label>
+        </div>
+        <div class="btns">
+          <button class="primary" id="askBtn">Ask</button>
+          <button id="newSessionBtn">New Session</button>
+          <button class="warn" id="resetContextBtn">Reset Context</button>
+          <button id="clearBtn">Clear</button>
+        </div>
+        <div class="status" id="askStatus"></div>
+      </aside>
+
+      <main class="card">
+        <h2>Learnset Upload</h2>
+        <div class="row">
+          <label for="files">Upload files to <code>/learnset</code></label>
+          <input id="files" type="file" multiple>
+        </div>
+        <div class="btns">
+          <button class="primary" id="uploadBtn">Upload to Learnset</button>
+          <button class="primary" id="syncLearnsetBtn">Sync Learnset</button>
+          <button id="refreshFilesBtn">Refresh Files</button>
+          <button class="warn" id="openLearnsetBtn">Show Learnset Path</button>
+        </div>
+        <div class="status" id="uploadStatus"></div>
+        <div class="muted" id="learnsetPath"></div>
+
+        <hr style="border:none;border-top:1px solid var(--line);margin:14px 0;">
+
+        <h2>Answer</h2>
+        <div class="answer" id="answer">No answer yet.</div>
+        <div class="meta">
+          <span id="mode">mode: -</span>
+          <span id="confidence">confidence: -</span>
+          <span id="cacheHit">cache: -</span>
+        </div>
+
+        <h2 style="margin-top:14px;">Citations</h2>
+        <ul class="sources" id="citations"></ul>
+
+        <h2 style="margin-top:14px;">Learnset Files</h2>
+        <ul id="filesList"></ul>
+      </main>
+    </div>
+  </div>
+
+  <script>
+    const IDs = {
+      tenant_id: "11111111-1111-1111-1111-111111111111",
+      workspace_id: "22222222-2222-2222-2222-222222222222",
+      user_id: "33333333-3333-3333-3333-333333333333"
+    };
+
+    const els = {
+      persona: document.getElementById("persona"),
+      technicalness: document.getElementById("technicalness"),
+      technicalnessValue: document.getElementById("technicalnessValue"),
+      tone: document.getElementById("tone"),
+      conciseness: document.getElementById("conciseness"),
+      concisenessValue: document.getElementById("concisenessValue"),
+      query: document.getElementById("query"),
+      useGeneralKnowledge: document.getElementById("useGeneralKnowledge"),
+      useContext: document.getElementById("useContext"),
+      sessionId: document.getElementById("sessionId"),
+      fastMode: document.getElementById("fastMode"),
+      askBtn: document.getElementById("askBtn"),
+      newSessionBtn: document.getElementById("newSessionBtn"),
+      resetContextBtn: document.getElementById("resetContextBtn"),
+      clearBtn: document.getElementById("clearBtn"),
+      askStatus: document.getElementById("askStatus"),
+      answer: document.getElementById("answer"),
+      mode: document.getElementById("mode"),
+      confidence: document.getElementById("confidence"),
+      cacheHit: document.getElementById("cacheHit"),
+      citations: document.getElementById("citations"),
+      files: document.getElementById("files"),
+      uploadBtn: document.getElementById("uploadBtn"),
+      syncLearnsetBtn: document.getElementById("syncLearnsetBtn"),
+      refreshFilesBtn: document.getElementById("refreshFilesBtn"),
+      uploadStatus: document.getElementById("uploadStatus"),
+      filesList: document.getElementById("filesList"),
+      learnsetPath: document.getElementById("learnsetPath"),
+      openLearnsetBtn: document.getElementById("openLearnsetBtn"),
+    };
+
+    function makeSessionId() {
+      if (window.crypto && window.crypto.randomUUID) return window.crypto.randomUUID();
+      return "sess_" + Date.now();
+    }
+
+    function getSessionId() {
+      let sid = localStorage.getItem("verity_session_id");
+      if (!sid) {
+        sid = makeSessionId();
+        localStorage.setItem("verity_session_id", sid);
+      }
+      return sid;
+    }
+
+    function setSessionId(sid) {
+      localStorage.setItem("verity_session_id", sid);
+      els.sessionId.value = sid;
+    }
+
+    function setStatus(el, text, ok = true) {
+      el.textContent = text;
+      el.className = "status " + (ok ? "ok" : "err");
+    }
+
+    function techDepthFromSlider(v) {
+      if (v < 34) return "low";
+      if (v > 66) return "high";
+      return "medium";
+    }
+
+    function wireSliders() {
+      const sync = () => {
+        els.technicalnessValue.textContent = els.technicalness.value;
+        els.concisenessValue.textContent = els.conciseness.value;
+      };
+      els.technicalness.addEventListener("input", sync);
+      els.conciseness.addEventListener("input", sync);
+      sync();
+    }
+
+    function conversationalnessFromTone(tone) {
+      if (tone === "friendly") return 0.85;
+      if (tone === "critical") return 0.2;
+      return 0.5;
+    }
+
+    async function ask() {
+      const q = els.query.value.trim();
+      if (!q) {
+        setStatus(els.askStatus, "Enter a question first.", false);
+        return;
+      }
+      setStatus(els.askStatus, "Thinking...", true);
+      const payload = {
+        ...IDs,
+        persona: els.persona.value,
+        query: q,
+        technical_depth: techDepthFromSlider(Number(els.technicalness.value)),
+        output_tone: els.tone.value,
+        conciseness: Number(els.conciseness.value) / 100.0,
+        conversationalness: conversationalnessFromTone(els.tone.value),
+        use_general_knowledge: !!els.useGeneralKnowledge.checked,
+        use_context: !!els.useContext.checked,
+        session_id: els.sessionId.value,
+        fast_mode: !!els.fastMode.checked,
+      };
+      try {
+        const res = await fetch("/ask", {
+          method: "POST",
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify(payload)
+        });
+        if (!res.ok) {
+          const body = await res.text();
+          throw new Error("HTTP " + res.status + " " + body);
+        }
+        const data = await res.json();
+        els.answer.textContent = data.answer || "";
+        els.mode.textContent = "mode: " + (data.mode ?? "-");
+        els.confidence.textContent = "confidence: " + (typeof data.confidence === "number" ? data.confidence.toFixed(3) : "-");
+        els.cacheHit.textContent = "cache: " + (data.cache_hit ? "hit" : "miss");
+        els.citations.innerHTML = "";
+        (data.citations || []).forEach(c => {
+          const li = document.createElement("li");
+          const a = document.createElement("a");
+          a.href = c.url;
+          a.target = "_blank";
+          a.rel = "noopener noreferrer";
+          const hp = c.heading_path ? " (" + c.heading_path + ")" : "";
+          a.textContent = c.title + hp;
+          li.appendChild(a);
+          els.citations.appendChild(li);
+        });
+        setStatus(els.askStatus, "Done.", true);
+      } catch (e) {
+        setStatus(els.askStatus, String(e), false);
+      }
+    }
+
+    async function upload() {
+      const files = els.files.files;
+      if (!files || files.length === 0) {
+        setStatus(els.uploadStatus, "Select one or more files first.", false);
+        return;
+      }
+      setStatus(els.uploadStatus, "Uploading...", true);
+      const form = new FormData();
+      for (const f of files) form.append("files", f);
+      try {
+        const res = await fetch("/ui/upload", { method: "POST", body: form });
+        if (!res.ok) {
+          const body = await res.text();
+          throw new Error("HTTP " + res.status + " " + body);
+        }
+        const data = await res.json();
+        els.learnsetPath.textContent = "Learnset path: " + (data.learnset_path || "");
+        setStatus(els.uploadStatus, "Uploaded " + data.saved_count + " file(s) to learnset.", true);
+        await refreshFiles();
+      } catch (e) {
+        setStatus(els.uploadStatus, String(e), false);
+      }
+    }
+
+    async function syncLearnset() {
+      setStatus(els.uploadStatus, "Syncing learnset...", true);
+      try {
+        const res = await fetch("/ui/learnset/sync", {
+          method: "POST",
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify({ workspace_id: IDs.workspace_id })
+        });
+        if (!res.ok) {
+          const body = await res.text();
+          throw new Error("HTTP " + res.status + " " + body);
+        }
+        const data = await res.json();
+        const msg = "Queued " + data.queued_jobs + " job(s), skipped " + data.skipped_files + " file(s).";
+        setStatus(els.uploadStatus, msg, true);
+      } catch (e) {
+        setStatus(els.uploadStatus, String(e), false);
+      }
+    }
+
+    async function refreshFiles() {
+      try {
+        const res = await fetch("/ui/files");
+        const data = await res.json();
+        els.filesList.innerHTML = "";
+        (data.files || []).slice(0, 100).forEach(f => {
+          const li = document.createElement("li");
+          li.textContent = f.path + " (" + f.size + " bytes)";
+          els.filesList.appendChild(li);
+        });
+      } catch (_) {
+        // no-op
+      }
+    }
+
+    function newSession() {
+      setSessionId(makeSessionId());
+      setStatus(els.askStatus, "Started a new session.", true);
+    }
+
+    async function resetContext() {
+      setStatus(els.askStatus, "Resetting context...", true);
+      try {
+        const res = await fetch("/ask/context/reset", {
+          method: "POST",
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify({
+            workspace_id: IDs.workspace_id,
+            user_id: IDs.user_id,
+            persona: els.persona.value,
+            session_id: els.sessionId.value
+          })
+        });
+        const data = await res.json();
+        if (!res.ok) throw new Error(data.detail || "Reset failed");
+        setStatus(els.askStatus, "Context reset.", true);
+      } catch (e) {
+        setStatus(els.askStatus, String(e), false);
+      }
+    }
+
+    function bind() {
+      els.askBtn.addEventListener("click", ask);
+      els.newSessionBtn.addEventListener("click", newSession);
+      els.resetContextBtn.addEventListener("click", resetContext);
+      els.clearBtn.addEventListener("click", () => {
+        els.query.value = "";
+        els.answer.textContent = "No answer yet.";
+        els.citations.innerHTML = "";
+        els.mode.textContent = "mode: -";
+        els.confidence.textContent = "confidence: -";
+        els.cacheHit.textContent = "cache: -";
+        setStatus(els.askStatus, "", true);
+      });
+      els.uploadBtn.addEventListener("click", upload);
+      els.syncLearnsetBtn.addEventListener("click", syncLearnset);
+      els.refreshFilesBtn.addEventListener("click", refreshFiles);
+      els.openLearnsetBtn.addEventListener("click", () => {
+        els.learnsetPath.textContent = "Learnset folder: /Users/aadit/Downloads/Verity/learnset";
+      });
+    }
+
+    wireSliders();
+    setSessionId(getSessionId());
+    bind();
+    refreshFiles();
+  </script>
+</body>
+</html>

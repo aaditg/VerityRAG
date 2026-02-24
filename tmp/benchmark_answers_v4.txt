@@ -1,0 +1,189 @@
+===== Q1 =====
+
+=== Answer ===
+TechNova can maintain availability and meet its RTO of 2 hours in case the primary AWS region us-east-1 becomes unavailable due to the following mechanisms:
+
+Mode: grounded  Confidence: 0.5614214753018902  Cache hit: False
+
+=== Citations ===
+1. TechNova_Cloud_Infrastructure.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Cloud_Infrastructure.pdf
+2. TechNova_Application_Data_Architecture.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Application_Data_Architecture.pdf
+3. TechNova_Security_Compliance.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Security_Compliance.pdf
+
+=== Suggested Followups ===
+- Show sources
+- Provide a deeper technical explanation
+
+===== Q2 =====
+
+=== Answer ===
+I found partial evidence but not enough to answer with high confidence. Please narrow scope (account, system, or date range).
+
+Mode: followup  Confidence: 0.5255636238456519  Cache hit: False
+
+=== Citations ===
+1. TechNova_Cloud_Infrastructure.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Cloud_Infrastructure.pdf
+2. TechNova_Security_Compliance.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Security_Compliance.pdf
+3. TechNova_Application_Data_Architecture.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Application_Data_Architecture.pdf
+
+=== Suggested Followups ===
+- Narrow time window
+- Specify target system or document
+
+===== Q3 =====
+
+=== Answer ===
+If a P1 security incident impacts EU customer data, TechNova must report the incident within 72 hours.
+
+Mode: grounded  Confidence: 0.5424101850560142  Cache hit: False
+
+=== Citations ===
+1. TechNova_Security_Compliance.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Security_Compliance.pdf
+2. Q1 Enterprise Notes (Risks) -> https://example.local/q1
+3. TechNova_Cloud_Infrastructure.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Cloud_Infrastructure.pdf
+4. TechNova_Application_Data_Architecture.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Application_Data_Architecture.pdf
+
+=== Suggested Followups ===
+- Show sources
+- Provide a deeper technical explanation
+
+===== Q4 =====
+
+=== Answer ===
+A user request from frontend to database involves the following key mechanisms:
+
+Mode: grounded  Confidence: 0.5258343505236615  Cache hit: False
+
+=== Citations ===
+1. TechNova_Security_Compliance.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Security_Compliance.pdf
+2. TechNova_Cloud_Infrastructure.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Cloud_Infrastructure.pdf
+3. TechNova_Application_Data_Architecture.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Application_Data_Architecture.pdf
+
+=== Suggested Followups ===
+- What specific components of the frontend and database are involved in this process?
+
+===== Q5 =====
+
+=== Answer ===
+TechNova supports observability through various systems that complement each other.
+
+Mode: grounded  Confidence: 0.5841152639255561  Cache hit: False
+
+=== Citations ===
+1. TechNova_Security_Compliance.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Security_Compliance.pdf
+2. TechNova_Application_Data_Architecture.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Application_Data_Architecture.pdf
+3. TechNova_Cloud_Infrastructure.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Cloud_Infrastructure.pdf
+
+=== Suggested Followups ===
+- Show sources
+- Provide a deeper technical explanation
+
+===== Q6 =====
+
+=== Answer ===
+Systems responsible for protecting secrets and ensuring secure authentication include AWS Secrets Manager, OAuth 2.0 integrated with Okta, and multi-factor authentication.
+
+Mode: grounded  Confidence: 0.5685913684826099  Cache hit: False
+
+=== Citations ===
+1. TechNova_Application_Data_Architecture.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Application_Data_Architecture.pdf
+2. TechNova_Security_Compliance.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Security_Compliance.pdf
+3. TechNova_Cloud_Infrastructure.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Cloud_Infrastructure.pdf
+
+=== Suggested Followups ===
+- Show sources
+- Provide a deeper technical explanation
+
+===== Q7 =====
+
+=== Answer ===
+If the on-premise Chicago data center goes offline, TechNova has redundancy mechanisms in place to ensure minimal disruption. Key mechanisms include:
+
+Mode: grounded  Confidence: 0.5662741790450176  Cache hit: False
+
+=== Citations ===
+1. TechNova_Cloud_Infrastructure.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Cloud_Infrastructure.pdf
+2. TechNova_Security_Compliance.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Security_Compliance.pdf
+3. TechNova_Application_Data_Architecture.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Application_Data_Architecture.pdf
+
+=== Suggested Followups ===
+- Show sources
+- Provide a deeper technical explanation
+
+===== Q8 =====
+
+=== Answer ===
+To diagnose a latency spike in production, the following components would likely be involved:
+
+Mode: grounded  Confidence: 0.5227860162726276  Cache hit: False
+
+=== Citations ===
+1. TechNova_Cloud_Infrastructure.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Cloud_Infrastructure.pdf
+2. TechNova_Application_Data_Architecture.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Application_Data_Architecture.pdf
+3. TechNova_Security_Compliance.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Security_Compliance.pdf
+
+=== Suggested Followups ===
+- Show sources
+- Provide a deeper technical explanation
+
+===== Q9 =====
+
+=== Answer ===
+TechNova separates production workloads from public exposure through a combination of security controls and network architecture.
+
+Mode: grounded  Confidence: 0.5114151822831418  Cache hit: False
+
+=== Citations ===
+1. TechNova_Security_Compliance.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Security_Compliance.pdf
+2. TechNova_Cloud_Infrastructure.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Cloud_Infrastructure.pdf
+3. TechNova_Application_Data_Architecture.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Application_Data_Architecture.pdf
+
+=== Suggested Followups ===
+- Show sources
+- Provide a deeper technical explanation
+
+===== Q10 =====
+
+=== Answer ===
+TechNova's disaster recovery and long-term data retention are supported by the following technologies:
+
+Mode: grounded  Confidence: 0.5235705191459936  Cache hit: False
+
+=== Citations ===
+1. TechNova_Cloud_Infrastructure.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Cloud_Infrastructure.pdf
+2. TechNova_Application_Data_Architecture.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Application_Data_Architecture.pdf
+3. TechNova_Security_Compliance.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Security_Compliance.pdf
+
+=== Suggested Followups ===
+- Show sources
+- Provide a deeper technical explanation
+
+===== Q11 =====
+
+=== Answer ===
+Implementing a microservices architecture with Kubernetes clusters managed via EKS, using Redis for caching and session storage, and storing primary transactional data in PostgreSQL clusters can reduce API cost and operational overhead.
+
+Mode: grounded  Confidence: 0.5001091775205904  Cache hit: False
+
+=== Citations ===
+1. TechNova_Application_Data_Architecture.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Application_Data_Architecture.pdf
+
+=== Suggested Followups ===
+- Show sources
+- Provide a deeper technical explanation
+
+===== Q12 =====
+
+=== Answer ===
+To gain temporary production access, an engineer must pass the following layered controls:
+
+Mode: grounded  Confidence: 0.5871979765773128  Cache hit: False
+
+=== Citations ===
+1. TechNova_Security_Compliance.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Security_Compliance.pdf
+2. TechNova_Cloud_Infrastructure.pdf -> file:///Users/aadit/Downloads/Verity/learnset/TechNova_Cloud_Infrastructure.pdf
+
+=== Suggested Followups ===
+- Show sources
+- Provide a deeper technical explanation
+

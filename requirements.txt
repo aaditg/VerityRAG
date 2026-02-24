@@ -1,0 +1,4 @@
+# Monorepo aggregate requirements for convenience.
+# Prefer per-service virtualenv installs via scripts/setup_local.sh.
+-r api/requirements.txt
+-r worker/requirements.txt
